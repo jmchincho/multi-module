@@ -60,3 +60,9 @@ parent-project/webapp/target/surefire-reports/TEST-org\.prueba\.AppTest\.xml
 parent-project/webapp/target/test-classes/org/prueba/AppTest\.class
 
 parent-project/webapp/target/webapp-1\.0-SNAPSHOT\.jar
+
+parent-project/core/target/core-1\.0\.jar
+
+parent-project/service/target/service-1\.0\.jar
+
+parent-project/webapp/target/
