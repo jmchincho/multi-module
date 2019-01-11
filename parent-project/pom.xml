@@ -76,4 +76,16 @@
     <module>service</module>
     <module>webapp</module>
   </modules>
+
+  <distributionManagement>
+   <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8082/nexus/content/repositories/releases</url>
+   </repository>
+  </distributionManagement>
+  <scm>
+     <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
+     <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
+     <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
+  </scm>
 </project>
