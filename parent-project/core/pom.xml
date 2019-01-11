@@ -4,13 +4,13 @@
   <parent>
     <groupId>org.prueba</groupId>
     <artifactId>parent-project</artifactId>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.6</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.prueba</groupId>
   <artifactId>core</artifactId>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
 
   <name>core</name>
   <!-- FIXME change it to the project's website -->
