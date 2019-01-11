@@ -85,13 +85,13 @@
   <distributionManagement>
    <repository>
       <id>nexus-releases</id>
-      <url>http://localhost:8082/nexus/content/repositories/releases</url>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
    </repository>
   </distributionManagement>
   <scm>
      <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
      <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
      <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
-    <tag>parent-project-1.0</tag>
+    <tag>1.0</tag>
   </scm>
 </project>

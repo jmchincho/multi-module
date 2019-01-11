@@ -87,5 +87,6 @@
      <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
      <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
      <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
+    <tag>parent-project-1.0</tag>
   </scm>
 </project>
