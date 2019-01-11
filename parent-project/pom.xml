@@ -68,6 +68,19 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.11.1</version>
+          <configuration>
+            <username>jmchincho</username>
+            <password>$evilla50</password>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <releaseProfiles>releases</releaseProfiles>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
@@ -80,8 +93,14 @@
   <distributionManagement>
    <repository>
       <id>nexus-releases</id>
-      <url>http://localhost:8081/nexus/content/repositories/releases</url>
-   </repository>
+      <name>nexus-releases</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>nexus-snapshots</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
   <scm>
      <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
