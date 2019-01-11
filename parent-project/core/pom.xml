@@ -4,13 +4,13 @@
   <parent>
     <groupId>org.prueba</groupId>
     <artifactId>parent-project</artifactId>
-    <version>1.1</version>
+    <version>1.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.prueba</groupId>
   <artifactId>core</artifactId>
-  <version>1.1</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>core</name>
   <!-- FIXME change it to the project's website -->
@@ -87,6 +87,6 @@
      <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
      <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
      <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
-    <tag>parent-project-1.1</tag>
+    <tag>parent-project-1.0</tag>
   </scm>
 </project>
