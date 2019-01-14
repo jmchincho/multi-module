@@ -4,15 +4,17 @@
   <parent>
     <groupId>org.prueba</groupId>
     <artifactId>parent-project</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.7-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.prueba</groupId>
-  <artifactId>core</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <artifactId>repository</artifactId>
+  <version>1.7-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
-  <name>core</name>
+
+  <name>repository</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -73,20 +75,38 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <artifactItems>
+              <artifactItem>
+                <groupId>com.prueba.concepto</groupId>
+                <artifactId>p1</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <type>zip</type>
+                <overWrite>true</overWrite>
+                <outputDirectory>${basedir}/source-hot-deploy</outputDirectory>
+              </artifactItem>
+            </artifactItems>
+            <!-- other configurations here -->
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+          <configuration>
+              <outputDirectory>${basedir}/p1</outputDirectory>
+              <resources>
+                  <resource>
+                      <directory>${basedir}/source-hot-deploy/p1-0.0.1-SNAPSHOT</directory>
+                      <filtering>true</filtering>
+                  </resource>
+              </resources>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
-
-  <distributionManagement>
-   <repository>
-      <id>nexus-releases</id>
-      <url>http://localhost:8081/nexus/content/repositories/releases</url>
-   </repository>
-  </distributionManagement>
-  <scm>
-     <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
-     <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
-     <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
-    <tag>1.0</tag>
-  </scm>
 </project>

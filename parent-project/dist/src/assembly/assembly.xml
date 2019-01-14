@@ -1,0 +1,36 @@
+<assembly
+    xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+    <id>make-zip</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+  <moduleSets>
+    <moduleSet>
+      <useAllReactorProjects>true</useAllReactorProjects>
+      <includes>
+        <include>org.prueba:core</include>
+        <include>org.prueba:service</include>
+        <include>org.prueba:webapp</include>
+        <include>org.prueba:repository</include>
+      </includes>
+      <sources>
+        <excludeSubModuleDirectories>false</excludeSubModuleDirectories>
+        <fileSets>
+          <fileSet>
+            <includes>
+              <include>src/**</include>
+              <include>p1/**</include>
+            </includes>
+            <excludes>
+              <exclude>target/**</exclude>
+              <exclude>source-hot-deploy/**</exclude>
+            </excludes>
+          </fileSet>
+        </fileSets>
+      </sources>
+    </moduleSet>
+  </moduleSets>
+</assembly>

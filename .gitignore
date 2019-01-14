@@ -72,3 +72,9 @@ parent-project/service/target/
 parent-project/target/
 
 parent-project/core/target/
+
+parent-project/dist/target/
+
+parent-project/repository/p1-0\.0\.1-SNAPSHOT/
+
+parent-project/repository/p1/

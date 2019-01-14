@@ -8,8 +8,15 @@
   <packaging>pom</packaging>
 
   <name>parent-project</name>
-  <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+
+  <modules>
+    <module>core</module>
+    <module>service</module>
+    <module>webapp</module>
+    <module>repository</module>
+    <module>dist</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -76,19 +83,12 @@
           <configuration>
             <username>jmchincho</username>
             <password>$evilla50</password>
-            <tagNameFormat>v@{project.version}</tagNameFormat>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <releaseProfiles>releases</releaseProfiles>
           </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
-    <module>core</module>
-    <module>service</module>
-    <module>webapp</module>
-  </modules>
 
   <distributionManagement>
    <repository>
