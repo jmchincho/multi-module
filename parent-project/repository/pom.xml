@@ -4,13 +4,13 @@
   <parent>
     <groupId>org.prueba</groupId>
     <artifactId>parent-project</artifactId>
-    <version>1.7</version>
+    <version>1.8-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.prueba</groupId>
   <artifactId>repository</artifactId>
-  <version>1.7</version>
+  <version>1.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
 
