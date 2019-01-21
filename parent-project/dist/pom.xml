@@ -3,13 +3,13 @@
     <parent>
         <artifactId>parent-project</artifactId>
         <groupId>org.prueba</groupId>
-        <version>1.7</version>
+        <version>1.8-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <artifactId>dist</artifactId>
-    <version>1.7</version>
+    <version>1.8-SNAPSHOT</version>
     <build>
         <plugins>
             <plugin>
@@ -35,8 +35,4 @@
             </plugin>
         </plugins>
     </build>
-
-  <scm>
-    <tag>1.8-SNAPSHOT</tag>
-  </scm>
 </project>
