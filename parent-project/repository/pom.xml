@@ -80,18 +80,28 @@
           <artifactId>maven-dependency-plugin</artifactId>
           <version>3.1.1</version>
           <configuration>
-            <artifactItems>
-              <artifactItem>
-                <groupId>com.prueba.concepto</groupId>
-                <artifactId>p1</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-                <type>zip</type>
-                <overWrite>true</overWrite>
-                <outputDirectory>${basedir}/source-hot-deploy</outputDirectory>
-              </artifactItem>
-            </artifactItems>
-            <!-- other configurations here -->
-          </configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>com.prueba.concepto</groupId>
+                    <artifactId>p1</artifactId>
+                    <version>0.0.1-SNAPSHOT</version>
+                    <type>zip</type>
+                    <overWrite>true</overWrite>
+                    <outputDirectory>${basedir}/source-hot-deploy</outputDirectory>
+                  </artifactItem>
+                </artifactItems>
+                <!-- other configurations here -->
+              </configuration>
+          <executions>
+            <execution>
+              <id>unpack</id>
+              <phase>package</phase>
+              <goals>
+                <goal>unpack</goal>
+              </goals>
+              
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>

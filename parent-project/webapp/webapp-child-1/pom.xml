@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.prueba</groupId>
+    <artifactId>webapp</artifactId>
+    <version>1.8-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
 
-  <groupId>org.prueba</groupId>
-  <artifactId>parent-project</artifactId>
-  <version>1.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <groupId>org.prueba.webapp</groupId>
+  <artifactId>webapp-child-1</artifactId>
+  <version>1.8-SNAPSHOT</version>
 
-  <name>parent-project</name>
+  <name>webapp-child-1</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -23,6 +28,16 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.prueba</groupId>
+      <artifactId>core</artifactId>
+      <version>1.8-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.prueba</groupId>
+      <artifactId>service</artifactId>
+      <version>1.8-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
@@ -71,22 +86,5 @@
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
-    <module>core</module>
-    <module>service</module>
-    <module>webapp</module>
-  </modules>
 
-  <distributionManagement>
-   <repository>
-      <id>nexus-releases</id>
-      <url>http://localhost:8081/nexus/content/repositories/releases</url>
-   </repository>
-  </distributionManagement>
-  <scm>
-     <connection>scm:git:https://github.com/jmchincho/multi-module.git</connection>
-     <url>scm:git:https://github.com/jmchincho/multi-module.git</url>
-     <developerConnection>scm:git:https://github.com/jmchincho/multi-module.git</developerConnection>
-    <tag>1.0</tag>
-  </scm>
 </project>

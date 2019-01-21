@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.prueba.AppTest" time="0.031" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.dir" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre"/>
+    <property name="user.name" value="josemanuel.chincho"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib"/>
+    <property name="user.home" value="/Users/josemanuel.chincho"/>
+    <property name="localRepository" value="/Users/josemanuel.chincho/.m2/repository"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="user.language" value="es"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.io.tmpdir" value="/var/folders/xq/ldjhcp150xj9b2lxtnb51pqc0000gp/T/"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.class.path" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/test-classes:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/classes:/Users/josemanuel.chincho/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/josemanuel.chincho/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/core/libs/core.jar:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/service/target/service-1.8-SNAPSHOT.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="sun.java.command" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/surefire/surefirebooter360920173526570222.jar /Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/surefire 2019-01-18T13-14-14_385-jvmRun1 surefire6208299598771685621tmp surefire_29160142366594939779tmp"/>
+    <property name="user.timezone" value=""/>
+    <property name="surefire.test.class.path" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/test-classes:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/classes:/Users/josemanuel.chincho/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/josemanuel.chincho/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/core/libs/core.jar:/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/service/target/service-1.8-SNAPSHOT.jar:"/>
+    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/classes"/>
+    <property name="surefire.real.class.path" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1/target/surefire/surefirebooter360920173526570222.jar"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.version" value="24.80-b11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.version" value="1.7.0_80"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.ext.dirs" value="/Users/josemanuel.chincho/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="os.version" value="10.14.2"/>
+    <property name="basedir" value="/Users/josemanuel.chincho/work/linguaserve/prueba-de-concepto/multi-module/multi-module/parent-project/webapp/webapp-child-1"/>
+    <property name="java.library.path" value="/Users/josemanuel.chincho/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="ES"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="org.prueba.AppTest" time="0.001"/>
+</testsuite>

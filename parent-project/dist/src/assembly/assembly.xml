@@ -21,12 +21,14 @@
         <fileSets>
           <fileSet>
             <includes>
+              <include>webapp-child-1/**</include>
               <include>src/**</include>
-              <include>p1/**</include>
+              <include>p1/**</include>           
             </includes>
             <excludes>
-              <exclude>target/**</exclude>
-              <exclude>source-hot-deploy/**</exclude>
+              <exclude>**/target/**</exclude>
+              <exclude>**/pom.xml</exclude>
+              <exclude>**/source-hot-deploy/**</exclude>
             </excludes>
           </fileSet>
         </fileSets>
