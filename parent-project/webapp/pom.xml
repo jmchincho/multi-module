@@ -74,4 +74,8 @@
     </pluginManagement>
   </build>
 
+
+  <scm>
+    <tag>1.8-SNAPSHOT</tag>
+  </scm>
 </project>
